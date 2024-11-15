@@ -9,6 +9,6 @@ df = pd.read_csv(file_path, sep='\t')
 df['Sampling_date'] = pd.to_datetime(df['Sampling_date'], format='%d.%m.%Y', errors='coerce')
 
 # Save as a TSV file
-df.to_csv('meta_data.tsv', sep='\t', index=False)
+df.to_csv('meta_data2.tsv', sep='\t', index=False)
 
 print("Date converted successfully!")
