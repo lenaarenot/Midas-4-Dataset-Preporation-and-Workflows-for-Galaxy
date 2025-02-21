@@ -8,7 +8,7 @@ This repository contains all resources used for processing and analysing the MiD
 * **Galaxy Workflows**: Automated pipelines used for data processing.
 * **Modified Dataset Files**: Adjusted input files for reproducibility.
 
-**Dataset Modifications**
+**Dataset Modifications** <br />
 To align the raw MiDAS 4 dataset for analysis, several adjustments were made. These can be found in the _python_snippets_ folder:
 
 * **ASV Table**: Split into smaller sheets, merged related columns, and converted to TSV format.
