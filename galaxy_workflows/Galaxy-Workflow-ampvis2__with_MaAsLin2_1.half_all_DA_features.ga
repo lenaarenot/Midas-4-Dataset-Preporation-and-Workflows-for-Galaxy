@@ -1,0 +1,373 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "comments": [],
+    "format-version": "0.1",
+    "name": "ampvis2__with_MaAsLin2_1.half_all_DA_features",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "ASV file"
+                }
+            ],
+            "label": "ASV file",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 0,
+                "top": 115.21865091057373
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "6cba9a5e-c398-496b-ae25-90aa47686de8",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "metadata"
+                }
+            ],
+            "label": "metadata",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 179.1093763046982,
+                "top": 245.509942179684
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "c6d02ae6-f2ae-431e-a7ec-66dfb08c98f9",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Taxonomy"
+                }
+            ],
+            "label": "Taxonomy",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 179.7204795974001,
+                "top": 325.46704989533146
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "41f3f104-44df-4ce3-bf1e-173f0285f719",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "e.g. Process_type,C",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "e.g. Process_type,C",
+                    "name": "reference"
+                }
+            ],
+            "label": "reference",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 172.52910510822775,
+                "top": 486.23214397044353
+            },
+            "tool_id": null,
+            "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "6830a3b8-580c-4934-92d8-8cea6d879cf0",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "e.g.LOG or AST",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "e.g.LOG or AST",
+                    "name": "Transform"
+                }
+            ],
+            "label": "Transform",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "left": 170.25485851436858,
+                "top": 560.2224243240761
+            },
+            "tool_id": null,
+            "tool_state": "{\"validators\": [], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "525a8a4d-77f2-4480-a43c-f60f869c80e9",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "singtabop|input": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Table Compute",
+                    "name": "singtabop"
+                }
+            ],
+            "label": null,
+            "name": "Table Compute",
+            "outputs": [
+                {
+                    "name": "table",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 283.4195279660504,
+                "top": 101.4208016549668
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "3bf5661c0280",
+                "name": "table_compute",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"out_opts\": [\"ignore_nas\", \"output_headers_col\", \"output_headers_row\"], \"precision\": \"6\", \"singtabop\": {\"use_type\": \"single\", \"__current_case__\": 0, \"input\": {\"__class__\": \"ConnectedValue\"}, \"col_row_names\": [\"has_col_names\", \"has_row_names\"], \"adv\": {\"header\": null, \"nrows\": null, \"skipfooter\": null, \"skip_blank_lines\": true}, \"user\": {\"mode\": \"matrixapply\", \"__current_case__\": 3, \"matrixapply_func\": {\"vector_op\": \"custom\", \"__current_case__\": 0, \"custom_func\": \"vec / np.sum(vec)\"}, \"dimension\": \"0\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.2.4+galaxy0",
+            "type": "tool",
+            "uuid": "bcbe2de2-ac81-423a-85fb-83ed20211cdb",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/maaslin2/maaslin2/1.18.0+galaxy0",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "additional_options|transform": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "input_data": {
+                    "id": 5,
+                    "output_name": "table"
+                },
+                "input_metadata": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "reference": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MaAsLin 2",
+                    "name": "additional_options"
+                }
+            ],
+            "label": null,
+            "name": "MaAsLin 2",
+            "outputs": [
+                {
+                    "name": "figures_pdfs",
+                    "type": "input"
+                },
+                {
+                    "name": "archive_output",
+                    "type": "zip"
+                },
+                {
+                    "name": "all_results",
+                    "type": "tabular"
+                },
+                {
+                    "name": "significant_results",
+                    "type": "tabular"
+                },
+                {
+                    "name": "residuals",
+                    "type": "rdata"
+                },
+                {
+                    "name": "headmap",
+                    "type": "pdf"
+                }
+            ],
+            "position": {
+                "left": 474.9845625890747,
+                "top": 368.13667453502705
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/maaslin2/maaslin2/1.18.0+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "f4580402a2a2",
+                "name": "maaslin2",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"additional_options\": {\"min_abundance\": \"0.0\", \"min_prevalence\": \"0.1\", \"max_significance\": \"0.0005\", \"normalization\": \"TSS\", \"transform\": {\"__class__\": \"ConnectedValue\"}, \"analysis_method\": \"LM\", \"correction\": null, \"standardize\": true}, \"fixed_effects\": [\"12\"], \"input_data\": {\"__class__\": \"ConnectedValue\"}, \"input_metadata\": {\"__class__\": \"ConnectedValue\"}, \"output\": {\"plot_heatmap\": true, \"heatmap_first_n\": \"20\", \"plot_scatter\": true, \"residuals_output\": true}, \"random_effects\": null, \"reference\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.18.0+galaxy0",
+            "type": "tool",
+            "uuid": "626f5f03-4d2f-4151-859f-fd3f99c78aad",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "7": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_load/ampvis2_load/2.8.9+galaxy0",
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "metadata": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "otutable": {
+                    "id": 5,
+                    "output_name": "table"
+                },
+                "taxonomy": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool ampvis2 load",
+                    "name": "fasta"
+                },
+                {
+                    "description": "runtime parameter for tool ampvis2 load",
+                    "name": "tree"
+                }
+            ],
+            "label": null,
+            "name": "ampvis2 load",
+            "outputs": [
+                {
+                    "name": "ampvis",
+                    "type": "ampvis2"
+                },
+                {
+                    "name": "metadata_list_out",
+                    "type": "tabular"
+                },
+                {
+                    "name": "taxonomy_list_out",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 691.978504095216,
+                "top": 0
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/ampvis2_load/ampvis2_load/2.8.9+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "738474880da8",
+                "name": "ampvis2_load",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"asv_otu_col_empty\": true, \"asv_sequences\": false, \"fasta\": {\"__class__\": \"RuntimeValue\"}, \"guess_column_types\": true, \"metadata\": {\"__class__\": \"ConnectedValue\"}, \"otutable\": {\"__class__\": \"ConnectedValue\"}, \"pruneSingletons\": false, \"taxonomy\": {\"__class__\": \"ConnectedValue\"}, \"tree\": {\"__class__\": \"RuntimeValue\"}, \"write_lists\": [\"tax\", \"metadata\"], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.8.9+galaxy0",
+            "type": "tool",
+            "uuid": "884c831d-2023-4354-b460-66a5fa3763da",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "8": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "infile": {
+                    "id": 6,
+                    "output_name": "significant_results"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Text reformatting",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 780.8357437113165,
+                "top": 565.2243995902772
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "86755160afbf",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"code\": \"NR > 1 { if (!seen[$1]++) print $1 }\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "9.3+galaxy1",
+            "type": "tool",
+            "uuid": "93a06b8e-388d-49ed-b8dd-d2c06da408ec",
+            "when": null,
+            "workflow_outputs": []
+        }
+    },
+    "tags": [],
+    "uuid": "5de3f76d-b878-4856-84bd-44712a259f75",
+    "version": 1
+}
